@@ -1,0 +1,31 @@
+{
+    "name": "pho/http",
+    "description": "Good enough web framework.",
+    "minimum-stability": "dev",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "KhanhIceTea",
+        "email": "khanhicetea@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../core",
+            "symlink": true
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "pho/core": "*",
+        "zendframework/zend-diactoros": "^1.7",
+        "middlewares/request-handler": "^1.1",
+        "middlewares/error-handler": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pho\\Http\\": "src/"
+        }
+    }
+}
